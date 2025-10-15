@@ -149,11 +149,7 @@ if os.getcwd() == '/app':
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARD_PROTO', 'https')
 
     #Allow all host headers.
-    ALLOWED_HOSTS = ['*']
+    ALLOWED_HOSTS = ['UserNameapp.pythonanywhere.com']
 
     # Static asset configuration
-    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-    STATIC_ROOT = 'staticfiles'
-    STATICFILES_DIRS = (
-        os.path.join(BASE_DIR, 'static'),
-    )
+    STATIC_ROOT =os.path.join(BASE_DIR, 'static')
